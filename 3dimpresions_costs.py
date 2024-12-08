@@ -21,7 +21,7 @@ mano_de_obra= float(input())
 costo_kw_hrs = 0.81
 watts_maquina = 0.35
 ganancia= 0.4
-mantenimiento=0.5
+mantenimiento=5
 #Proceso
 #costo del filamento por gr.
 costo_por_gramos=(peso/1000)*costo_del_filamento
@@ -30,4 +30,4 @@ subtotal=(costo_por_gramos+costo_energia+mantenimiento)
 total=(subtotal*(1+ganancia))
 
 #Salida
-print(f'Para una impresion 3d con un tiempo de: {tiempo_impresion} tiene un costo por gramos de: {costo_por_gramos}  el subtotal es de: {subtotal} dando un total por pieza de {total}')
+print(f'Para una impresion 3d con un tiempo de: {tiempo_impresion} tiene un costo por gramos de: {costo_por_gramos}  con un costo de energia de: {costo_energia}el subtotal es de: {subtotal} dando un total por pieza de {total}')
