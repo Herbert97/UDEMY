@@ -26,7 +26,7 @@ mantenimiento=5
 #costo del filamento por gr.
 costo_por_gramos=(peso/1000)*costo_del_filamento
 costo_energia= (tiempo_impresion*costo_kw_hrs*watts_maquina)
-subtotal=(costo_por_gramos+costo_energia+mantenimiento)
+subtotal=(costo_por_gramos+costo_energia+mantenimiento+mano_de_obra)
 total=(subtotal*(1+ganancia))
 
 #Salida
